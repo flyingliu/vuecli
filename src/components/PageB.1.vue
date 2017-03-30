@@ -4,5 +4,18 @@
 </template>
 
 <script>
-    export default {}
+    export default {
+    
+        beforeRouterEnter(route, redirect, next) {
+            console.log(route, redirect, next);
+            let confirm = window.confirm("are you leave this");
+            if (confirm) {
+                next()
+            } else {
+                redirect("/");
+            }
+        }
+    
+    
+    }
 </script>

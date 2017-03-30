@@ -19,13 +19,29 @@
 
 <script>
     export default {
-        data () {
+    
+        data() {
             return {
                 msg: "this is fasdfasdf "
             }
         },
-        methods:{
-            haha:function(){
+    
+        // beforeRouteEnter(route, redirect, next) {
+        //     console.log(route, redirect, next);
+        //     let confirm = window.confirm("are you enter this");
+        //     if (confirm) {
+        //         window.setTimeout(() => {
+        //                 next(vm => {
+        //                     vm.msg = "==++++++"
+        //                 })
+        //             }
+        //         }
+        //         else {
+        //             redirect("/");
+        //         }
+        //     }, 2000),
+        methods: {
+            haha: function() {
                 console.log("haha");
             }
         }
