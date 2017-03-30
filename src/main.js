@@ -15,7 +15,7 @@ const router = new VueRouter({
         name: 'post'
     }, {
         path: '/b',
-        component: require('./components/PageB.vue'),
+        component: resolve => require(['./components/PageB.vue'], resolve),
         name: 'b',
         children: [{
                 path: '/b1',
