@@ -18,13 +18,13 @@ const router = new VueRouter({
         component: require('./components/PageB.vue'),
         name: 'b',
         children: [{
-                path: '/b.1',
+                path: '/b1',
                 component: require('./components/PageB.1.vue'),
-                name: 'b.1'
+                name: 'b1'
             }, {
                 path: '/b2',
                 component: require('./components/PageB.2.vue'),
-                name: 'b.2'
+                name: 'b2'
             }
 
         ]
