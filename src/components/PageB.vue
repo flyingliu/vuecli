@@ -22,29 +22,19 @@
     
         data() {
             return {
-                msg: "this is fasdfasdf "
+                msg: "this is 3322 "
             }
         },
     
-        // beforeRouteEnter(route, redirect, next) {
-        //     console.log(route, redirect, next);
-        //     let confirm = window.confirm("are you enter this");
-        //     if (confirm) {
-        //         window.setTimeout(() => {
-        //                 next(vm => {
-        //                     vm.msg = "==++++++"
-        //                 })
-        //             }
-        //         }
-        //         else {
-        //             redirect("/");
-        //         }
-        //     }, 2000),
+    
         methods: {
             haha: function() {
                 console.log("haha");
             }
-        }
+        },
+    
+
+
     }
 </script>
 
