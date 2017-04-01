@@ -1,14 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>fly</title>
-</head>
-
 <body>
-    <div id="fly"></div>
-    <script src="/dist/build.js"></script>
-</body>
+    <div id="counter-event-example">
+        <p>{{ total }}</p>
+        <button-counter v-on:ee="incrementTotal"></button-counter>
+        <button-counter v-on:ee="incrementTotal"></button-counter>
+    </div>
 
-</html>
+    <script>
+        Vue.component('button-counter', {
+            template: '<button v-on:click="increment">{{ counter }}</button>',
+            data: function() {
+                return {
+                    counter: 0
+                }
+            },
+            methods: {
+                increment: function() {
+                    this.counter += 1
+                    this.$emit('ee', 'cc')
+                }
+            },
+        })
+        new Vue({
+            el: '#counter-event-example',
+            data: {
+                total: 'arg'
+            },
+            methods: {
+                incrementTotal: function(b) {
+                    this.total = b + '1';
+                }
+            }
+        })
+    </script>
+</body>
