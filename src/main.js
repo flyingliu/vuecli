@@ -35,7 +35,7 @@ const router = new VueRouter({
         name: 'c'
     }, {
         path: '/',
-        component: require('./components/PageD.vue')
+        component: require('./components/index.vue')
     }, {
         path: '*',
         redirect: '/'
