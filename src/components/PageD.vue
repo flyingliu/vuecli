@@ -1,9 +1,8 @@
 <template>
   <div>
+      <img src="./../assets/logo.png" alt="">
       <h2 style="text-align: center">现在是第{{current}}页</h2>
       <pagination :total="total" :current="current" :callback="changePage"></pagination>
-
-      
   </div>
 </template>
 

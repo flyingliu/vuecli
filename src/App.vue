@@ -32,5 +32,5 @@
 </script>
 
 <style lang="scss">
-    
+    @import "./assets/iconfont/iconfont.css";
 </style>
