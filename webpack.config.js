@@ -32,7 +32,7 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(eot|woff|ttf|svg)$/,
+                test: /\.(eot|woff|ttf|csv)$/,
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]?[hash]'

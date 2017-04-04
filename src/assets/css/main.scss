@@ -1,8 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
 html,
 body {
     padding: 0;
-    background: lemonchiffon;
     margin: 0;
+    background: #fff;
+    color: #000;
     list-style: none;
     height: 100%;
+}
+
+.hide {
+    display: none;
 }

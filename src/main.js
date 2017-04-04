@@ -7,9 +7,9 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     mode: 'history',
     routes: [{
-        path: '/a/:id',
+        path: '/detail/:id',
         components: {
-            default: require('./components/PageA.vue'),
+            default: require('./components/detail.vue'),
             sidebar: require('./components/Sidebar.vue')
         },
         name: 'post'
@@ -19,20 +19,14 @@ const router = new VueRouter({
         name: 'b',
 
         children: [{
-                path: '/b1',
-                component: require('./components/PageB.1.vue'),
-                name: 'b1'
-            }, {
-                path: '/b2',
-                component: require('./components/PageB.2.vue'),
-                name: 'b2'
-            }
-
-        ]
-    }, {
-        path: '/c',
-        component: require('./components/PageC.vue'),
-        name: 'c'
+            path: '/b1',
+            component: require('./components/PageB.1.vue'),
+            name: 'b1'
+        }, {
+            path: '/b2',
+            component: require('./components/PageB.2.vue'),
+            name: 'b2'
+        }]
     }, {
         path: '/',
         component: require('./components/index.vue')
