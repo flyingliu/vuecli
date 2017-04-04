@@ -7,7 +7,7 @@ module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
+        publicPath: '/vuecli/dist/',
         filename: 'build.js'
     },
     module: {
