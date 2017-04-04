@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     mode: 'history',
     routes: [{
-        path: '/detail/:id',
+        path: '/vuecli/:id',
         components: {
             default: require('./components/detail.vue'),
             sidebar: require('./components/Sidebar.vue')
