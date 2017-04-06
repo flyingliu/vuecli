@@ -26,23 +26,8 @@
             return {
                 msg: "this flying"
             }
-        },
-        created: () => {
-            var mydata = require("./assets/data.csv");
-            console.log(store);
-            Papa.parse(mydata, {
-                download: true,
-                header: true,
-                skipEmptyLines: false,
-                complete: (results, file) => {
-                    let version = store.get("version")
-                    if (version != 3) {
-                        store.set("version", 3)
-                        store.set("data", results.data)
-                    }
-                }
-            })
         }
+
     }
 </script>
 

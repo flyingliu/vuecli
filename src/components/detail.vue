@@ -5,8 +5,10 @@
                 <h1 class="title">{{item.title}}</h1>
             </div>
             <div class="content">
-            <div v-html="item.content">
+                <div v-html="item.content"></div>
             </div>
+            <div class="footer">
+                copyright © flyingliu 2017
             </div>
         </div>
     </div>
@@ -46,5 +48,6 @@
         .content {
             img { max-width:100%;}
         }
+        .footer { padding:10px 0; margin:20px 0; border-top:1px solid #ccc; color:#ccc; font:10px/2 arial;}
     }
 </style>

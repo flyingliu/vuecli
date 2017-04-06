@@ -33,7 +33,25 @@
       }
     },
     created() {
-      this.fetchData()
+  
+      var mydata = require("./../assets/data.csv");
+      var _this = this;
+      var version = store.get("version")
+      var curVersion = 4
+      if (version == curVersion) {
+        _this.fetchData();
+      } else {
+        Papa.parse(mydata, {
+          download: true,
+          header: true,
+          skipEmptyLines: false,
+          complete: (results, file) => {
+            store.set("version", curVersion)
+            store.set("data", results.data)
+            _this.list = store.get("data");
+          }
+        })
+      }
     },
     methods: {
       fetchData() {
@@ -49,7 +67,12 @@
     text-decoration: none;
   }
   .index {
-    .title { font-size:40px; padding:20px 0;border-bottom:1px solid #000;margin:20px 0;}
+    .title {
+      font-size: 40px;
+      padding: 20px 0;
+      border-bottom: 1px solid #000;
+      margin: 20px 0;
+    }
     .ilist {
       ul {
         padding: 0;
