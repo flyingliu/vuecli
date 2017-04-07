@@ -1,13 +1,1 @@
-CACHE MANIFEST
-
-#v1.0.2
-
-CACHE:
-/vuecli/dist/build.js
-/vuecli/dist/jian.ttf
-
-NETWORK:
-*
-
-FALLBACK:
-404.html
+s
