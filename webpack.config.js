@@ -35,7 +35,7 @@ module.exports = {
                 test: /\.(eot|woff|ttf|csv)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]?[hash]'
+                    name: '[name].[ext]'
                 }
             },
             {
