@@ -1,8 +1,11 @@
 CACHE MANIFEST
 
-#v1.0.3
+#v1.0.4
 
 CACHE:
+https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css
+https://cdn.bootcss.com/PapaParse/4.2.0/papaparse.min.js
+https://flyingliu.github.io/vuecli/favicon.ico
 /vuecli/dist/jian.ttf
 
 NETWORK:
